@@ -5,3 +5,5 @@
 #    minuty a sekundy a vypiš je jako 1:1:1 jediným printem.
 
 
+
+print("hello")

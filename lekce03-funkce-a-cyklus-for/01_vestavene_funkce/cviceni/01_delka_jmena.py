@@ -3,4 +3,6 @@
 
 # Ulož si do proměnné jmeno své jméno a vypiš, kolik má písmen.
 
+jmeno = "Kris"
 
+print("moje jmeno ma", len(jmeno), "pismen")

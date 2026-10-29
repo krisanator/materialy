@@ -6,4 +6,9 @@
 #    Zeptej se na rok a vypiš "Přestupný." / "Nepřestupný.".
 #    (Vyzkoušej 2024, 1900, 2000.)
 
+rok = 2024
 
+if rok % 4 == 0:
+    print("Přestupný")
+else:
+    print("Nepřestupný")

@@ -6,3 +6,12 @@
 #    Jinak vypiš "Špatné údaje.".
 
 
+jmeno = "anna"
+heslo = "tajne"
+
+input("Jaké je tvoje jméno?")
+input("Jaké je tvoje heslo?")
+if (jmeno == True and heslo == True):
+    print("Vítej!")
+else:
+    print("Špatné údaje!")

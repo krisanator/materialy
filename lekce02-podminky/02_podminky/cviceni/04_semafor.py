@@ -5,6 +5,13 @@
 #    nebo "zelená"). Vypiš, co má řidič udělat:
 #    "červená" → "Stůj", "oranžová" → "Připrav se", "zelená" → "Jeď",
 #    cokoli jiného → "Neznámý signál".
-barva = "zelená"
+barva = "červená"
 
-
+if barva == "červená":
+    print("Stůj")
+elif barva == "oranžová":
+    print("Připrav se")
+elif barva == "zelená":
+    print("Jeď")
+else:
+    print("Neznámý signál")

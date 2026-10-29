@@ -9,4 +9,8 @@ znamka1 = 1
 znamka2 = 3
 znamka3 = 2
 
+prumer = (znamka1 + znamka2 + znamka3) / 3
 
+vyznamenani = prumer <= 2
+
+print("Ma na to? = ", vyznamenani)

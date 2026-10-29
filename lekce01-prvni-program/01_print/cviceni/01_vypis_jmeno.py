@@ -3,4 +3,7 @@
 
 # Vypiš na obrazovku svoje jméno.
 
+jmeno = "Kris"
+
+print ("Moje jméno je " + jmeno + ".")
 

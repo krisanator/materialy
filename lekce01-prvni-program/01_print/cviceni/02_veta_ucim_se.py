@@ -3,4 +3,7 @@
 
 # Vypiš větu: Učím se Python
 
+activity = "I am learning"
+target = "Python"
 
+print(activity, target)
