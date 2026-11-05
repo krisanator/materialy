@@ -1,0 +1,46 @@
+# def je_heslo_dlouhe(heslo):
+#     if len(heslo) > 8:
+#         return True
+#     else:
+#         return False
+
+# # ORRR
+
+def je_heslo_dlouhe(heslo):
+    return len(heslo) > 8
+
+# its the same thing!
+
+# # ORRRRR
+
+# def je_heslo_dlouhe(heslo):
+#     if len(heslo) < 8:
+#         return False
+#     elif len(heslo) > 15:
+#         return False
+#     else:
+#         return False
+
+#pak dalsi funkcicky
+
+def zeptej_se_na_jmeno():
+    jmeno = input("Zadej jmeno")
+    # uprava jmena
+    return jmeno
+
+def zeptej_se_na_heslo():
+    return input("Zadej heslo")
+
+def zeptej_se_na_email():
+    email = input("Zeptej se na email")
+    return email
+
+def prihlaseni_s_emailem():
+    jmeno = zeptej_se_na_jmeno()
+    heslo = zeptej_se_na_heslo()
+    if je_heslo_dlouhe(heslo):
+        print("Vitej", jmeno)
+    else:
+        print("Heslo neni dostatecne dlouhe")
+
+prihlaseni()

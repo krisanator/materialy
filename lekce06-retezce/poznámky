@@ -1,0 +1,178 @@
+
+# jmeno = input("Zadej jmeno")
+
+# print(jmeno)
+
+# rovna_se = "A" == "a"
+# print(rovna_se)
+
+# vek = input("Zadej svuj vek")
+
+# print(vek*4)
+# print("Za 10 let ti bude", int(vek) + 10)
+# print(vek+vek)
+
+# print(len(vek))
+
+# if "0" in vek:
+#     print("Tvuj vek konci nulou")
+# else:
+#     print("Tvuj vek NE-konci nulou")
+
+# if "Petr" in jmeno:
+#     print("Mas ve jmene slovo Petr")
+# else:
+#     print("NEmas ve jmene slovo Petr")
+
+# for pismeno in jmeno:
+#     print(pismeno)
+
+# vek = 30
+
+# print("Je mi" + str(vek) + "let")
+
+
+# vek = 30
+
+# print("Je mi", vek, "let")
+
+#                FSTRING
+# vek = 30
+# jmeno = "Anna"
+
+# print(f"Jsem {jmeno} a je mi {vek}")
+
+# kniha = "Maly princ"
+# stran_celkem = 320
+# precteno = 183
+
+# print(f"V {kniha} zbyva {stran_celkem - precteno} stranek do konce")
+
+# def  procenta(cast, celek):
+#     return cast / celek * 100
+# print(f"Mas precteno {procenta(precteno, stran_celkem):.2f} procent knihy")
+
+# # :.2f zaokrouhluje na 2 desetinna cisla
+
+#           specialni znaky v textech
+
+# print("Ahoj\n\n\nTomasi")
+
+# # orrr
+# print("Ahoj\tTomasi")
+
+# # chces tisknout uvozovky?
+
+# print("Ahoj \"Tomasi\"")
+
+# # chces zpetna lomitka?
+
+# print("Ahoj \\Tomasi\\")
+
+# # uvozovky muzou byt i ', nemusi byt vzdy ", pak python rozeznava cim koncis a klidne to muzes stridat
+# print('Ahoj "Tomasi"')
+
+# #chces radky mezi jednim printem? Tak 3x uvozovky!
+# print("""Ahoj
+
+
+# "Tomasi" """)
+
+# # volani funkce, len vrati pocet znaku:
+
+# print(len("123456dakjadlkjf"))
+
+# # volani funkce, upper vrati to slovo caps lockem, lower malymi:
+
+# print("pyladies".upper())
+
+# print("PYladies".lower())
+
+# # pocitame konkretni znaky
+
+# print("Ahoj Adame".count("a"))
+
+# # pozn.: "a" in "Ahoj Adame"
+
+# print("Ahoj Adame".lower().count("a"))
+
+# veta = "Ahoj\n Adame"
+# zmensena = veta.lower()
+# pocet_a = zmensena.count("n")
+# print(pocet_a)
+
+# #       FIND AND REPLACE
+# veta = "Ahoj\nAdame"
+# lepsi_veta = veta.replace("Ahoj","Dobry den")
+
+# print(lepsi_veta)
+
+# def zeptat_se_na_email():
+#     return input("Napis email").lower()
+
+# print(zeptat_se_na_email)
+
+# # vzdy to vytvari novy retezec
+
+# jmeno = "adam"
+# velke_jmeno = jmeno.upper()
+# print(velke_jmeno)
+
+# vek = input("Zadej vek")
+# if vek.isdigit():
+#     print("Za 10 let ti bude", int(vek) + 10)
+# else:
+#     print("Pises blbosti, jdi pryc")
+
+# slovo = "Pyladies"
+
+# # for pismeno in slovo:
+# #     print(pismeno)
+
+# # vzdy zaciname na cisle 0, prvni pozice je proste 0
+
+# print(slovo[0])
+
+# print(len(slovo))
+
+# # takhle se tiskne posledni:
+# print(slovo[-1])
+
+# # interval ale uzavreny, takze do cisla ale bez nej samotneho
+# print(slovo[0:2])
+
+# print(slovo[-3:])
+
+# print(slovo[::-1])
+
+# slovo = "Ahoj"
+# slovo = slovo[0] + "B" + slovo[1:]
+# print(slovo)
+
+
+# DEBUGGING
+
+# print("Zaciname")
+# cena = 100
+dph = 100 * 0.21
+# print(f"Cena {cena} Kc a DPH: {dph}")
+
+def tisknout(text):
+    print(text)
+    print(30*"*")
+    print(text)
+
+tisknout("Zaciname")
+cena = 100
+dph = 100 * 0.21
+print(f"Cena {cena} Kc a DPH: {dph}")
+
+
+# nápovědná chyba uvnitř pythonu je už známá, některé chyby se ale dějí mimo prostředí pythonu
+
+# VS Code má plug in Debugger
+# Run Python File -> Debug Python File
+
+# dále
+
+# rozkliknutý řádek a vedle se objeví červená tečka rozklikávací (sloupec před číslováním), kterou když zaktivuju, tak se debugger zastaví na označeném řádku
