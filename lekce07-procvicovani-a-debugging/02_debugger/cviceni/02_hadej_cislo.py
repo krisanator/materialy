@@ -9,9 +9,8 @@
 
 from random import randrange
 
-
 def vylosuj_cislo():
-    return randrange(1, 21)
+    return int(randrange(1, 21))
 
 
 def zeptej_se_na_tip():
@@ -21,26 +20,24 @@ def zeptej_se_na_tip():
 def je_trefa(tip, hledane):
     return tip == hledane
 
-
 def napoveda(tip, hledane):
     if tip > hledane:
         return "Moc velké."
     else:
         return "Moc malé."
-
-
+    
 pokusy = 0
 
 while True:
     hledane_cislo = vylosuj_cislo()
     tip = zeptej_se_na_tip()
     pokusy = pokusy + 1
-
+    if je_trefa(tip, hledane_cislo):
+        print(f"Trefa! Cislo bylo {hledane_cislo}")
+        break
     if pokusy == 5:
         print(f"Došly ti pokusy. Hledané číslo bylo {hledane_cislo}.")
         break
-    if je_trefa(tip, hledane_cislo):
-        print("Trefa!")
-        break
 
     print(napoveda(tip, hledane_cislo))
+

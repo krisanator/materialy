@@ -9,10 +9,10 @@
 
 from random import randrange
 
-
 def uklid_vstupu(text):
-    return text.strip().title()
+    return text.strip().lower()
 
+#tady jsem menila .title na .strip
 
 def tah_pocitace():
     cislo = randrange(1, 4)
@@ -23,22 +23,19 @@ def tah_pocitace():
     else:
         return "papir"
 
-
 def je_platny(tah):
     return tah == "kamen" or tah == "nuzky" or tah == "papir"
-
 
 def kdo_vyhral(tvuj, pocitacuv):
     if tvuj == pocitacuv:
         return "remiza"
-    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "papir"
+    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "nuzky"
     vyhrala_nuzkami = tvuj == "nuzky" and pocitacuv == "papir"
     vyhrala_papirem = tvuj == "papir" and pocitacuv == "kamen"
     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
         return "vyhra"
     else:
         return "prohra"
-
 
 tvuj_tah = uklid_vstupu(input("Tvůj tah (kamen/nuzky/papir): "))
 

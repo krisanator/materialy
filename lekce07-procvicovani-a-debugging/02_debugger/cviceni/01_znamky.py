@@ -41,8 +41,8 @@ def prospel(znamka):
 def vysvedceni(jmeno, test1, test2, test3):
     body = prumer(test1, test2, test3)
     znamka = slovni_znamka(body)
-    return f"{jmeno}: {body:.1f} bodů, {znamka}, {prospel(body)}"
-
+    return f"{jmeno}: {body:.1f} bodů, {znamka}, {prospel(znamka)}"
+# tady jsem prospel(body) upravila
 
 print(vysvedceni("Jana", 40, 35, 45))
 print(vysvedceni("Petr", 95, 88, 91))

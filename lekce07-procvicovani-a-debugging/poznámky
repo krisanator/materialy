@@ -1,0 +1,64 @@
+
+# obecná konvence v syntaxu je psát proměnné velkými písmeny, aby byly dobře vidět v kodu
+# proměnná může být i otázka pro uživatele, ale je dobré ji pojmenovat tak, aby bylo jasné, co obsahuje
+
+# KAMEN = "kamen" or "kámen"
+# # tohle ale registruje pouze první hodnotu :(
+# NUZKY = "nuzky"
+# PAPIR = "papir"
+# OTAZKA_PRO_UZIVATELE=f"Tvůj tah ({KAMEN}/{NUZKY}/{PAPIR}):"
+
+# from random import randrange
+
+# def uklid_vstupu(text):
+#     return text.strip().lower()
+
+# #tady jsem menila .title na .strip
+
+# def tah_pocitace():
+#     cislo = randrange(1, 4)
+#     if cislo == 1:
+#         return KAMEN
+#     elif cislo == 2:
+#         return NUZKY
+#     else:
+#         return PAPIR
+
+# def je_platny(tah):
+#     return tah == KAMEN or tah == NUZKY or tah == PAPIR
+
+# def kdo_vyhral(tvuj, pocitacuv):
+#     if tvuj == pocitacuv:
+#         return "remiza"
+#     vyhrala_kamenem = tvuj == KAMEN and pocitacuv == NUZKY
+#     vyhrala_nuzkami = tvuj == NUZKY and pocitacuv == PAPIR
+#     vyhrala_papirem = tvuj == PAPIR and pocitacuv == KAMEN
+#     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
+#         return "vyhra"
+#     else:
+#         return "prohra"
+
+# tvuj_tah = uklid_vstupu(input(OTAZKA_PRO_UZIVATELE))
+
+# if not je_platny(tvuj_tah):
+#     print("Takový tah neznám.")
+# else:
+#     pocitacuv_tah = tah_pocitace()
+#     print(f"Ty hraješ: {tvuj_tah}")
+#     print(f"Počítač hrál: {pocitacuv_tah}")
+
+#     vysledek = kdo_vyhral(tvuj_tah, pocitacuv_tah)
+#     if vysledek == "vyhra":
+#         print("Vyhrála jsi!")
+#     elif vysledek == "remiza":
+#         print("Remíza.")
+#     else:
+#         print("Prohrála jsi.")
+
+# CONDITIONAL BREAKPOINTS
+
+# pravým tlačítkem na červenou tečku breakpoint a zvolit Add Contitional Breakpoint
+for i in range(0, 10001):
+    if i == 1000:
+        print("Ahoj {i}")
+    print("Neni tisic")
