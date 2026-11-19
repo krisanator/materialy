@@ -6,3 +6,10 @@
 #    Vstup uprav tak, aby prošlo i " anna " nebo "ANNA".
 
 hoste = ["Anna", "Petra", "Jana", "Eva"]
+
+jmeno = input("Jak se jmenuješ?").capitalize()
+jmeno = jmeno.strip().capitalize()
+if jmeno in hoste:
+    print("Vítej, ", jmeno)
+else:
+    print("Na seznamu nejsi.")

@@ -11,8 +11,9 @@ TAHY = [KAMEN, NUZKY, PAPIR]
 
 
 def je_platny(tah):
-    return tah == KAMEN or tah == NUZKY or tah == PAPIR
+    return tah in TAHY[0] or tah in TAHY[1] or tah in TAHY[2]
 
 
 print(je_platny("nuzky"))       # True
 print(je_platny("pes"))         # False
+

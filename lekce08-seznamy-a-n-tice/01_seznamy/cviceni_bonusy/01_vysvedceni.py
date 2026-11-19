@@ -11,3 +11,17 @@
 #      "prospěl/a"              jinak
 #
 #    Vyzkoušej ji na seznamech [1, 2, 1], [1, 3, 2], [1, 5, 1] a [].
+
+znamky = input("Zadej známky").split(", ")
+
+def vyhodnot_vysvedceni(znamky):
+    if len(znamky) == 0:
+        return "bez známek"
+    elif 5 in znamky:
+        return "neprospěl/a"
+    elif sum(znamky) / len(znamky) <= 1.5 and max(znamky) <= 2:
+        return "s vyznamenáním"
+    else:
+        return "prospěl/a"
+
+print(vyhodnot_vysvedceni)
