@@ -13,3 +13,18 @@
 #      Položek: 4
 
 cenik = {"pivo": 45, "víno": 60, "džus": 35, "voda": 20}
+mnozstvi = {"pivo": 10, "víno": 10, "džus": 10, "voda": 10}
+
+cenik.update({"cola": 40})
+
+cenik["pivo"] = cenik.get("pivo") + 5
+
+mnozstvi.update({"voda": 0})
+
+
+for polozky in cenik:
+    if mnozstvi.get(polozky) == 0:
+        print(polozky.capitalize(), "je vyprodáno.")
+    else:
+        print(polozky.capitalize(), "stojí", cenik.get(polozky), "Kč.")
+
